@@ -22,7 +22,7 @@ export const volume01Chapters: Chapter[] = [
     number: 3,
     title: "Platform Overview",
     href: "#",
-    available: false,
+    available: true,
   },
   {
     number: 4,

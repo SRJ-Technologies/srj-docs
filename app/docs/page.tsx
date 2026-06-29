@@ -1,3 +1,6 @@
+import Link from "next/link";
+import DocCard from "@/components/docs/DocCard";
+
 export default function DocsHome() {
   return (
     <>
@@ -15,26 +18,31 @@ export default function DocsHome() {
       </p>
 
       <div className="mt-12 grid gap-6 md:grid-cols-2">
-        <div className="rounded-2xl border border-slate-200 p-6">
-          <h2 className="text-2xl font-bold">
-            Developer Handbook
-          </h2>
+  <DocCard
+    title="Developer Handbook"
+    description="Official engineering handbook for SRJ Platform development."
+    href="/docs/handbook"
+  />
 
-          <p className="mt-3 text-slate-600">
-            Learn the development workflow, architecture and standards.
-          </p>
-        </div>
+  <DocCard
+    title="Repository Architecture"
+    description="Project structure and engineering principles."
+    available={false}
+  />
 
-        <div className="rounded-2xl border border-slate-200 p-6">
-          <h2 className="text-2xl font-bold">
-            Repository Architecture
-          </h2>
+  <DocCard
+    title="Database Design"
+    description="Database schema and relationships."
+    available={false}
+  />
 
-          <p className="mt-3 text-slate-600">
-            Understand the project structure and engineering principles.
-          </p>
-        </div>
-      </div>
+  <DocCard
+    title="Core Modules"
+    description="ERP modules and business workflows."
+    available={false}
+  />
+</div>
+      
     </>
   );
 }

@@ -24,14 +24,14 @@ export default function Hero() {
 
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <Link
-            href="#"
+            href="/docs"
             className="rounded-xl bg-blue-600 px-8 py-3 text-white hover:bg-blue-700"
           >
             Explore Documentation
           </Link>
 
           <Link
-            href="#"
+            href="/products"
             className="rounded-xl border border-slate-300 px-8 py-3 hover:bg-slate-100"
           >
             View Products

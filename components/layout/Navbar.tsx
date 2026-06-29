@@ -34,24 +34,25 @@ export default function Navbar() {
             Home
           </Link>
 
-          <Link href="#" className="hover:text-blue-600">
+          <Link href="/products" className="hover:text-blue-600">
             Products
           </Link>
 
-          <Link href="#" className="hover:text-blue-600">
+          <Link href="/docs" className="hover:text-blue-600">
             Documentation
           </Link>
 
-          <Link href="#" className="hover:text-blue-600">
+          <Link href="/downloads" className="hover:text-blue-600">
             Downloads
           </Link>
         </nav>
-
-        {/* Button */}
-        <button className="rounded-lg bg-blue-600 px-5 py-2 text-white transition hover:bg-blue-700">
-          Get Started
-        </button>
-
+{/* Button */}
+<Link
+  href="/docs"
+  className="rounded-lg bg-blue-600 px-5 py-2 text-white transition hover:bg-blue-700"
+>
+  Get Started
+</Link>
       </div>
     </header>
   );
