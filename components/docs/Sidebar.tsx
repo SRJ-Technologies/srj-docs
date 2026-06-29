@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { docsNavigation } from "@/data/docs-navigation";
+import { documentationNavigation } from "@/data/navigation";
 
 export default function Sidebar() {
   const pathname = usePathname();
@@ -13,7 +13,7 @@ export default function Sidebar() {
       </h2>
 
       <nav className="space-y-2">
-        {docsNavigation.map((item) => (
+        {documentationNavigation.map((item) => (
           <Link
             key={item.href}
             href={item.href}

@@ -2,7 +2,8 @@ import type { ReactNode } from "react";
 
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import Sidebar from "@/components/docs/Sidebar";
+import Sidebar from "@/components/docs/navigation/Sidebar";
+
 
 interface DocsLayoutProps {
   children: ReactNode;
